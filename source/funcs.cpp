@@ -14,6 +14,16 @@ void menu(){
 
     float km_inicial, km_final, volume_abastecido;
 
+    std::cout << '\n';
+    std::cout << "+------------------------------+" << '\n';
+    std::cout << "|      Autonomie_LogTrack      |" << '\n';
+    std::cout << "+------------------------------+" << '\n';
+    std::cout << "| Para uma correta utlização,  |" << '\n';
+    std::cout << "| complete o tanque nos dois   |" << '\n';
+    std::cout << "| momentos.                    |" << '\n';
+    std::cout << "+------------------------------+" << '\n';
+    std::cout << '\n';
+
     std::cout << "Digite a quilometragem inicial: ";
     std::cin >> km_inicial;
 
