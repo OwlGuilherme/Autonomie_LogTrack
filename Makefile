@@ -8,23 +8,24 @@ CPP_SOURCE=$(wildcard ./source/*.cpp)
 HPP_SOURCE=$(wildcard ./source/*.hpp)
 
 # Object files
-OBJ=$(subst .cpp, .o,$(subst source, objects,$(CPP_SOURCE)))
+OBJ=$(patsubst ./source/%.cpp,./objects/%.o,$(CPP_SOURCE))
 
-# Compilador e linker
-CC=gcc
+# Compiler and linker
+CC=g++
 
-# Flags para o compilador
+# Flags for compiler
 CC_FLAGS=-c         \
          -W         \
          -Wall      \
          -ansi      \
          -pedantic
 
-# Comando para limpeza
+# Command used at clean target
 RM = rm -rf
 
-# Compilação e linking
-
+#
+# Compilation and linking
+#
 all: objFolder $(PROJ_NAME)
 
 $(PROJ_NAME): $(OBJ)
