@@ -1,5 +1,6 @@
 #include "funcs.hpp"
 #include <iostream>
+#include <iomanip>
 
 float autonomy(float km_inicial, float km_final, float volume_abastecido) {
    
@@ -10,7 +11,7 @@ float autonomy(float km_inicial, float km_final, float volume_abastecido) {
 }
 
 void menu(){
-    
+
     float km_inicial, km_final, volume_abastecido;
 
     std::cout << "Digite a quilometragem inicial: ";
@@ -21,4 +22,6 @@ void menu(){
 
     std::cout << "Digite o volume abastecido: ";
     std::cin >> volume_abastecido;
+
+    std::cout << "Autonomia: " << std::setprecision(3) << autonomy(km_inicial, km_final, volume_abastecido) << "km/l" << '\n';
 }
