@@ -2,6 +2,6 @@
 
 float autonomy(float km_inicial, float km_final, float volume_abastecido);
 
-void menu();
+void show_menu();
 
 void limpa_tela();

@@ -10,7 +10,7 @@ float autonomy(float km_inicial, float km_final, float volume_abastecido) {
     return autonomia;
 }
 
-void menu(){
+void show_menu(){
 
     float km_inicial, km_final, volume_abastecido;
 
