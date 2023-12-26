@@ -1,12 +1,7 @@
+#include "funcs.hpp"
 #include <iostream>
 #include <iomanip>
 
-float autonomy(float km_inicial, float km_final, float volume_abastecido) {
-    auto distancia = km_final - km_inicial;
-    float autonomia = distancia / volume_abastecido;
-
-    return autonomia;
-}
 
 
 int main() {
