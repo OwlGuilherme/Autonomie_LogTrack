@@ -17,7 +17,7 @@ int main() {
     std::cout << "Digite o volume abastecido: ";
     std::cin >> volume_abastecido;
 
-    std::cout << std::setprecision(3) << autonomy(km_inicial, km_final, volume_abastecido) << "km/l" << '\n';
+    std::cout << "Autonomia: " << std::setprecision(3) << autonomy(km_inicial, km_final, volume_abastecido) << "km/l" << '\n';
 
     return 0;
 }
