@@ -1,7 +1,8 @@
 #include <iostream>
+#include <iomanip>
 
 float autonomy(float km_inicial, float km_final, float volume_abastacido) {
-    auto distancia = km_final - km_final;
+    auto distancia = km_final - km_inicial;
     float autonomia = distancia / volume_abastacido;
 
     return autonomia;
@@ -21,9 +22,7 @@ int main() {
     std::cout << "Digite o volume abastecido: ";
     std::cin >> volume_abastacido;
 
-    std::cout << "Km inicial: " << km_inicial << "\n";
-    std::cout << "Km final: " << km_final << "\n";
-    std::cout << "Volume abastecido: " << volume_abastacido << "\n";
+    std::cout << std::setprecision(3) << autonomy(km_inicial, km_final, volume_abastacido) << "km/l" << '\n';
 
     return 0;
 }
