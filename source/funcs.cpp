@@ -23,5 +23,11 @@ void menu(){
     std::cout << "Digite o volume abastecido: ";
     std::cin >> volume_abastecido;
 
+    limpa_tela();
+
     std::cout << "Autonomia: " << std::setprecision(3) << autonomy(km_inicial, km_final, volume_abastecido) << "km/l" << '\n';
+}
+
+void limpa_tela(){
+    std::cout << "\033[2J\033[H";
 }
